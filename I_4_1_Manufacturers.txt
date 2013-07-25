@@ -1,0 +1,11 @@
+10	
+book designer	none
+braille embosser	none
+caster	none
+collotyper	none
+engraver	none
+etcher	none
+lithographer	none
+platemaker	none
+printer	none
+printmaker	none

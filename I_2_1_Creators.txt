@@ -1,0 +1,23 @@
+22	
+architect	N: landscape architect
+artist	N: sculptor
+author	N: librettist, lyricist, screenwriter
+landscape architect	B: architect
+sculptor	B: artist
+librettist	B: author
+lyricist	B: author
+screenwriter	B: author
+cartographer	none
+choreographer	none
+compiler	Note: compiler as contributor editor of compilation
+composer	none
+designer	none
+enacting jurisdiction	none
+filmmaker	none
+interviewee	none
+interviewer	none
+inventor	none
+photographer	none
+praeses	none
+programmer	none
+respondent	none

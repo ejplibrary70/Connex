@@ -1,0 +1,47 @@
+46	
+abridger	none
+animator	none
+arranger of music	none
+art director	none
+choreographer (expression)	none
+composer (expression)	none
+costume designer	none
+court reporter	none
+draftsman	none
+editor	none
+editor of compilation	none
+edior of moving image work	none
+illustrator	none
+interviewee (expression)	none
+interviewer (expression)	none
+musical director	none
+performer	N: actor, commentator, conductor, dancer, host, instrumentalist, moderator, narrator, on-screen presenter, panelist, puppeteer, singer, speaker, storyteller, teacher
+actor	B: performer
+commentator	B: performer
+conductor	B: performer
+dancer	B: performer
+host	B: performer
+instrumentalist	B: performer
+moderator	B: performer
+narrator	B: performer
+on-screen presenter	B: performer
+panelist	B: performer
+puppeteer	B: performer
+singer	B: performer
+speaker	B: performer
+storyteller	B: performer
+teacher	B: performer
+presenter	none
+production designer	none
+recording engineer	none
+recordist	none
+stage director	none
+surveyor	none
+transcriber	none
+translator	none
+writer of supplementary textual content	N: writer of added commentary, writer of added text, writer of added lyrics, writer of introduction, writer of preface
+writer of added commentary	B: writer of supplementary textual content
+writer of added text	B: writer of supplementary textual content
+writer of added lyrics	B: writer of added text
+writer of introduction	B: writer of supplementary textual content
+writer of preface	B: writer of supplementary textual content
