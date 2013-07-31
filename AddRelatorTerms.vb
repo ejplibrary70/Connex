@@ -1,12 +1,9 @@
 'MacroName:AddRelatorTerms
 'MacroDescription:Add relator terms by a dialog box
 
-'MacroName:AddRelatorTerms
-'MacroDescription:Add relator terms by a dialog box
-
 ' Written by E.J. Petersen
 ' Email: ejplibrary70@gmail.com
-' Version: 0.2 (24 Jul 2013)
+' Version: 0.3 (31 Jul 2013)
 ' In active development
 
 ' To begin, place the cursor in a heading and run the macro.
@@ -101,7 +98,7 @@ Sub Main
    Select Case response
       Case -1            ' OK
          'msgBox "OK and newHeading is " & dlg.Hdg
-         repHdg = sTag & sInd & dlg.Hdg  & "."
+         repHdg = sTag & sInd & dlg.Hdg  & "."        'Add a period at the end
          'msgBox repHdg
          bool = CS.SetFieldLine (nRow, repHdg)
       Case 0             ' Cancel
@@ -137,7 +134,7 @@ End Function
 
 Function RTDlgFunction(identifier$, action, suppvalue)
 
-Dim newDBList$
+Dim newDBList$, newHdgAdd$
 Dim dlmE as String
 
 dlmE = Chr(223) & "e "
@@ -199,7 +196,14 @@ dlmE = Chr(223) & "e "
                DlgText "Note", dropboxArrayN7( DlgValue("TheDropList") )
           End Select
          Case "AddButton"
-           DlgText "Hdg", DlgText("Hdg") & ", " & dlmE & DlgText ("TheDropList")
+           ' Check if hyphen at the end-- no comma
+           newHdgAdd = DlgText("Hdg")
+           If InStr("-", Mid$(newHdgAdd, len(newHdgAdd)) ) Then
+              DlgText "Hdg", newHdgAdd & " " & dlmE & DlgText ("TheDropList")
+           Else
+              DlgText "Hdg", newHdgAdd & ", " & dlmE & DlgText ("TheDropList")
+           End If
+           
            DlgFocus ("TheDropList")
            RTDlgFunction = 1
        End Select
